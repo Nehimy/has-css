@@ -2,6 +2,8 @@
    El valor border-box en el box-sizing hace que el padding y el border pasen a formar parte
    del cálculo del ancho de la caja.
  */
+/* @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 *{
   margin: 0px;
@@ -9,33 +11,37 @@
   box-sizing: border-box;
 }
 
-h1:has(+ p) {
-  margin: 0 0 0.35rem 0;
-  color: #2b8a33;
-  font-size: 5rem;
+body {
+    /* font-family: 'Protest Riot', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: #212142;
+    color: white;
+    font-size: large;
+    text-align: center;
 }
 
-h1:has(+ h2) {
-  margin: 0 0 2rem 0;
-  color: orange;
-  font-size: xx-large;
+.container:has(>h1){
+  color: #ff72c4;
 }
 
-h2:has(+p) {
-  background: #f0a;
-  color: #fff;
-  font-size: 5rem;
+p:has(+strong){
+  color: #a480e3;
 }
 
-
-h1,
-h2,
-h3 {
-  margin: 0 0 1rem 0;
-  background: #fe2:
+h1:has(~h3){
+  color: #5fff65;
 }
 
-:is(h1, h2, h3):has(+ :is(h2, h3, h4)) {
-  margin: 0 0 0.25rem 0;
-  background: #f0add33;
+a {
+  color: #74d4ff;
+  text-decoration:none;
+}
+
+a:has(img){
+  font-size:25px;
+  display: grid;
+  place-content: center;
 }
