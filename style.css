@@ -23,25 +23,26 @@ body {
     text-align: center;
 }
 
+a {
+    color: #74d4ff;
+    text-decoration:none;
+}
+
 .container:has(>h1){
-  color: #ff72c4;
+    color: #ff72c4;
 }
 
 p:has(+strong){
-  color: #a480e3;
+    color: #a480e3;
 }
 
 h1:has(~h3){
-  color: #5fff65;
+    color: #5fff65;
 }
 
-a {
-  color: #74d4ff;
-  text-decoration:none;
-}
 
 a:has(img){
-  font-size:25px;
-  display: grid;
-  place-content: center;
+    font-size:25px;
+    display: grid;
+    place-content: center;
 }
